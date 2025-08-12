@@ -1,0 +1,287 @@
+/* CSS Backgrounds */
+
+.clipped-light {
+    background-image: -webkit-gradient(linear, right top, left top, color-stop(50%, #1e1e1e), color-stop(50%, #0ff), color-stop(74%, #0083ef), to(#1e1e1e));
+    background-image: linear-gradient(270deg, #1e1e1e 50%, #0ff 50%, #0083ef 74%, #1e1e1e);
+}
+
+.overlay {
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(17%, black), color-stop(18.2%, rgba(0, 0, 0, 0))), -webkit-gradient(linear, left top, right top, color-stop(86%, rgba(0, 0, 0, 0)), to(#000000)),
+        radial-gradient(circle closest-side at 50% 50%, rgba(0, 0, 0, 0) 78%, #000000 97%);
+    background-image: linear-gradient(to right, black 17%, rgba(0, 0, 0, 0) 18.2%), linear-gradient(to right, rgba(0, 0, 0, 0) 86%, #000000), radial-gradient(circle closest-side at 50% 50%, rgba(0, 0, 0, 0) 78%, #000000 97%);
+}
+
+.shapes-overlay {
+    background-image: radial-gradient(circle farthest-side, rgba(0, 0, 0, 0) 61%, #000);
+}
+
+/* SVG Classes */
+
+.cast-blur {
+    z-index: 3;
+    opacity: 0.2;
+    -webkit-filter: blur(40px);
+    filter: blur(40px);
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+}
+
+.shadow {
+    z-index: 4;
+    -webkit-filter: blur(20px);
+    filter: blur(20px);
+    position: absolute;
+}
+
+.bar-glow {
+    z-index: 5;
+    -webkit-filter: blur(4px);
+    filter: blur(4px);
+    position: absolute;
+}
+
+.mid-glow {
+    z-index: 6;
+    -webkit-filter: blur(6px);
+    filter: blur(6px);
+    mix-blend-mode: normal;
+    position: absolute;
+}
+
+.top-glow-2 {
+    z-index: 30;
+    opacity: 1;
+    -webkit-filter: blur(2px);
+    filter: blur(2px);
+    mix-blend-mode: soft-light;
+    position: absolute;
+}
+
+.top-glow-1 {
+    z-index: 31;
+    opacity: 0.6;
+    -webkit-filter: blur(11px);
+    filter: blur(11px);
+    position: absolute;
+}
+
+.top-glow-3 {
+    z-index: 31;
+    opacity: 0.2;
+    -webkit-filter: blur(0.8px);
+    filter: blur(0.8px);
+    position: absolute;
+}
+
+.preloader {
+    z-index: 1003;
+    justify-content: center;
+    background-color:black;
+    background-image: url("Desktop-Menu-BgImg.jpg");
+    background-size:cover;
+    background-position-x: -1px;
+    background-repeat:no-repeat;
+    align-items: center;
+    display: flex;
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+}
+
+.preloader .elements {
+    position:absolute;
+    width:100%;
+    height:100%;
+}
+.preloader .leftside {
+    position:absolute;
+    top:15%;
+    left:0;
+    z-index:1;
+    width:100%;
+}
+.preloader .rightside {
+    position:absolute;
+    top:8%;
+    right:-10px;
+    z-index:1;
+}
+.preloader .rightside img {
+    width: 180px;
+    position: relative;
+    top: -10px;
+}
+.preloader .rightside .white-block {
+    margin-left: 20px;
+}
+.preloader .lower {
+    position:absolute;
+    left:0;
+    bottom:0;
+    font-size:11px;
+    font-style:italic;
+    z-index:1;
+}
+
+.preloader .lower .disclaimer {
+    padding: 15px 150px 15px 20px;
+    position: relative;
+    z-index: 1;
+}
+
+@media screen and (max-width: 667px) {
+    
+    .preloader .lower .disclaimer {
+        padding: 15px 20px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .break {
+        display: none;
+    }
+}
+
+.preloader .lower .version {
+    position: relative;
+    z-index:1;
+    padding: 7px 20px;
+    border-top:1px solid #ccc;
+    width:94%;
+}
+
+.preloader .lower .outline {
+    border-top: 1px solid white;
+    border-right: 3px solid white;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -63px;
+    transform: skew(50deg);
+    /*border-radius: 0 10px 0 0;*/
+    border-radius:0;
+}
+
+.preloader .lower .outline .top {
+    position: absolute;
+    background-color:#0D171E;
+    width:100%;
+    height:100%;
+    box-shadow: inset #111 -20px 20px 40px -16px;
+}
+
+.preloader .lower .outline .bottom {
+    position: absolute;
+    background-color:#222;
+    width:100%;
+    height:35px;
+    z-index:1;
+    bottom:0;
+    box-shadow: inset #111 -20px 20px 40px -16px;
+}
+
+.preloader .bottom-line {
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px solid white;
+    bottom: 0;
+}
+
+.preloader .matrix {
+    position: absolute;
+}
+
+@media screen and (max-width: 667px) {
+    .preloader {
+        background-image: url("iPhone-Horz-Menu-BgImg.jpg");
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .preloader {
+        background-image: url("iPhone-Vert-Menu-BgImg.jpg");
+    }
+}
+  
+.loader-wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 100px 50px;
+    display: flex;
+    position: relative;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.loader-wrapper img {
+    vertical-align: middle;
+    width: 450px;
+    display: inline-block;
+    box-sizing: border-box;
+    z-index: 1;
+    margin:10px 0 0;
+}
+
+.loader-wrapper .background {
+    width:100%;
+    height:58%;
+    position:absolute;
+    top:0;
+    left:0;
+    background-color:#111;
+    opacity:0.92;
+    margin:76px 0;
+}
+
+.overlay {
+    z-index: 50;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.shapes-overlay {
+    z-index: 10;
+    width: 440px;
+    height: 440px;
+    position: absolute;
+    left: 50px;
+}
+
+.bar {
+    flex: none;
+    width: 286px;
+    height: 2px;
+    position: relative;
+    overflow: visible;
+    top: 30px;
+}
+
+.clipper {
+    z-index: 10;
+    background-color: #1e1e1e;
+    width: 286px;
+    height: 2px;
+    position: relative;
+    overflow: hidden;
+}
+
+.clipped-light {
+    z-index: 21;
+    width: 0;
+    height: 130%;
+    position: relative;
+}
+
+.clipped-light.clipped-light-1 {
+    z-index: 21;
+}

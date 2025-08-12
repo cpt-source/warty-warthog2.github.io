@@ -1,0 +1,155 @@
+#header {
+    background-color:#161616;
+}
+#lightbox {
+    width:100%;
+    height:100%;
+    background-color:rgba(0, 0, 0, 0.65);
+    display:none;
+    position:absolute;
+    z-index: 1000;
+    top:0;
+    left:0;
+}
+
+#lightbox div {
+    position:absolute;
+    right:0;
+    top:50px;
+}
+
+#additional-info {
+    height:auto;
+    overflow-y:scroll;
+}
+#additional-info ul {
+    margin:0;
+    padding:0;
+}
+#additional-info li {
+    cursor: pointer;
+    color: #D9D9D9;
+    background-color: #161616;
+    list-style-type: none;
+    padding: 3px 15px;
+    margin: 0 0 10px;
+    font-size:11px;
+    height: 80px;
+}
+.mlpt-title {
+    font-family: Michroma, sans-serif;
+    padding: 8px 13px;
+    font-size: 14px;
+    background-color: #161616;
+    /*margin: 7px 0 3px;*/
+    /*border-bottom: 1px solid white;*/
+}
+.mlpt-section {
+    background-color: #262626;
+    padding:5px;
+}
+
+#cop-section-mlpt .step-tabs {
+    /*display:none;*/
+}
+
+#cop-section-mlpt .text-area {
+    padding:0;
+}
+
+#cop-section-mlpt .text-area .top, #cop-section-mlpt .text-area .bottom {
+    padding:0;
+    margin:0;
+}
+#cop-section-mlpt .text-area .bottom {
+    height:100px;
+    overflow:hidden;
+}
+
+#cop-section-mlpt .text-area .top, 
+#cop-section-mlpt .text-area span {
+    background-color: #161616 !important;
+    color: #D9D9D9;
+}
+#table-head, #table-head:hover {
+    background-color: #262626 !important;
+    color: #D9D9D9;
+}
+#table-body {
+    width: 100%;
+    background-color: #161616;
+    padding:0;
+}
+.table-block {
+    border:0;
+}
+.block {
+    background-color:#1C1C1C;
+    border:0;
+    text-transform: uppercase;
+    color: #D9D9D9;
+}
+
+.item._2 {
+    background-color: #1C1C1C;
+    border-top: 0.25px solid #262626 !important;
+    color: #D9D9D9;
+}
+
+.columns-wrapper {
+    border-right:0;
+}
+
+#additional-info li {
+    height:auto;
+    padding-bottom:10px;
+    cursor:auto;
+}
+
+#additional-info li p {
+    display:block;
+    width:78%;
+}
+
+#additional-info li h4 {
+    font-family: Inter, sans-serif;
+    font-size:17px;
+    font-weight:300;
+    margin-bottom:5px;
+}
+
+#additional-info .type1 h4 {
+    color:#23FF18;
+}
+
+#additional-info .type2 h4 {
+    color:#FFD118;
+}
+
+#additional-info .tag {
+    background-color:#2D2D2D;
+    color:#54A5CA;
+    padding: 2px 20px 3px;
+    border:1px solid #626262;
+    margin-left: 7px;
+    cursor:pointer;
+}
+
+#additional-info .type1 .tag, 
+#additional-info .type2 .tag {
+    color:white;
+    padding: 4px 20px 3px;
+    position:absolute;
+    right:0;
+    top:-44px;
+}
+
+#additional-info .type1 .tag {
+    background-color:#1F6735;
+    border-color:#368D55;
+}
+
+#additional-info .type2 .tag {
+    background-color:#69560B;
+    border-color:#8C800B;
+}

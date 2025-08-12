@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<!-- __V3D_PUZZLES__ - enable Puzzles button in the App Manager -->
+<html lang="en">
+<head>
+  <title>Multilvl Part Viewer</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+  <!-- Search Engines -->
+  <meta name="description" content="Multilvl Part Viewer">
+  <!-- favicons -->
+  <link rel="icon" type="image/png" sizes="16x16" href="cp3favicon_32.png">
+
+  <script src="anims.js"></script>
+  <script src="bar.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="preloader.css">
+  <link rel="stylesheet" type="text/css" href="bar.css">
+  <link href="multilvl.css" rel="stylesheet" content-type="text/css" media="all" />
+  <link rel="stylesheet" href="fontstyles.css" content-type="text/css" media="all" />
+</head>
+
+
+
+<body class="body">
+    <div class="page-wrapper">
+        <div
+            data-animation="default"
+            class="navbar2_component w-nav"
+            data-easing2="ease"
+            fs-scrolldisable-element="smart-nav"
+            data-easing="ease"
+            data-collapse="small"
+            data-w-id="77695618-cf27-0109-0f42-35f0c1638f0e"
+            role="banner"
+            data-duration="400"
+        >
+            <div id="mobile-menu">
+                <a id="about-btn2" data-w-id="81fef096-7349-b07f-8209-5f05624a155b" class="navbar2_link left w-nav-link">About</a>
+                <a id="controls-btn2" data-w-id="81fef096-7349-b07f-8209-5f05624a155b" class="navbar2_link left w-nav-link">Controls</a>
+                <a id="links-btn2" data-w-id="81fef096-7349-b07f-8209-5f05624a155b" class="navbar2_link left w-nav-link">Resources</a>
+            </div>
+            <div class="navbar2_container-2">
+                <a class="navbar2_logo-link w-nav-brand"><img src="cp3logo_256.png" loading="lazy" alt="" class="navbar2_logo" /></a>
+                <a href="https://www.checkpointthree.com/" target="_blank" class="navbar2_link w-nav-link mobile-only" style="display:none;">Checkpoint 3</a>
+                <nav role="navigation" id="w-node-_77695618-cf27-0109-0f42-35f0c1638f12-21381931" class="navbar2_menu is-page-height-tablet w-nav-menu">
+                    <div class="menu">
+                        <a href="https://www.checkpointthree.com/" target="_blank" class="navbar2_link w-nav-link" style="border-right: 1px solid white;padding-right: 25px;">Checkpoint 3</a>
+                        <a id="about-btn" data-w-id="81fef096-7349-b07f-8209-5f05624a155b" class="navbar2_link left w-nav-link">About</a>
+                        <a id="controls-btn" data-w-id="81fef096-7349-b07f-8209-5f05624a155b" class="navbar2_link left w-nav-link">Controls</a>
+                        <a id="links-btn" data-w-id="81fef096-7349-b07f-8209-5f05624a155b" class="navbar2_link left w-nav-link">Resources</a>
+                    </div>
+                </nav>
+                <div id="w-node-_77695618-cf27-0109-0f42-35f0c1638f25-21381931" class="navbar2_button-wrapper">
+                    <div class="navbar2_menu-button w-nav-button" style="-webkit-user-select: text;" aria-label="menu" role="button" tabindex="0" aria-controls="w-nav-overlay-0" aria-haspopup="menu" aria-expanded="false">
+                        <div id="menu-btn" class="menu-icon2">
+                            <div class="menu-icon2_line-top"></div>
+                            <div class="menu-icon2_line-middle"><div class="menu-icon_line-middle-inner"></div></div>
+                            <div class="menu-icon2_line-bottom"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-0"></div>
+        </div>
+        <div class="hero-section">
+            <div id="slide-open">
+                <div class="arrow">
+                    <span class="horizontal"><img src="double_arrow.png" /></span>
+                    <span class="vertical"><img src="double_arrow.png" style="transform: rotate(-90deg);" /></span>
+                </div>
+            </div>
+            <div class="mobile-only"><div class="mobile-spacer"></div></div>
+            <div class="slextable-fixed-block">
+                <div id="flex-block" class="flex-block">
+                    <span href="" id="reset" class="icon-link w-inline-block"><img src="restart_alt.svg" loading="lazy" alt="" /><div class="tooltip"><div class="triangle"></div>Reset Camera</div></span>
+                    <span href="" id="annotations-button" class="hilight icon-link w-inline-block">A<div class="tooltip"><div class="triangle"></div>Toggle Annotations</div></span>
+                    <span href="" id="focused" class="hilight icon-link w-inline-block"><img src="vector.svg" loading="lazy" alt="" /><div class="tooltip"><div class="triangle"></div>Focused Mode</div></span>
+                    <span href="" id="isolated" class="icon-link w-inline-block"><img src="group97.svg" loading="lazy" alt="" /><div class="tooltip"><div class="triangle"></div>Isolated Mode</div></span>
+                    <span href="" id="expand-button" class="icon-link w-inline-block"><img src="group99.svg" loading="lazy" alt="" /><div class="tooltip"><div class="triangle"></div>Expand / Collapse</div></span>
+                    <span href="" id="comp-button" class="icon-link w-inline-block"><img src="group98.svg" loading="lazy" alt="" /><div class="tooltip"><div class="triangle"></div>Restore Model</div></span>
+                    <span href="" id="cop-button" class="icon-link w-inline-block"><img src="playpause_button.svg" loading="lazy" alt="" style="max-width:none;" /><div class="tooltip"><div class="triangle"></div>Animations</div></span>
+                </div>
+            </div>
+            <div class="table-wrapper">
+                <div id="table">
+                    <div id="header">
+                        <form action="" class="search w-form">
+                            <button type="submit" disabled style="display: none;" aria-hidden="true"></button>
+                            <input id="search-box" class="search-input w-input" maxlength="256" name="query" placeholder="Search" type="search" required="" />
+                            <div id="clear" class="search-button w-button clear-button hide" value="">
+                                <img src="clear_btn.jpg" loading="lazy" />
+                                <!-- This svg is causing some weird Verge3D error. Not exactly sure why. Let's replace with svg image. -->
+                                <!--<svg viewBox="0 0 24 24" style="width: 16px; height: 16px;" role="presentation">
+                                    <path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" style="fill: currentcolor;"></path>-->
+                                </svg>
+                            </div>
+                            <div id="search" type="submit" class="search-button w-button" value="" disabled >Search</div>
+                        </form>
+                        <div id="table-head" class="item">
+                            <div class="columns-wrapper">
+                                <div>
+                                    Index<br />
+                                    No.
+                                </div>
+                            </div>
+                            <div class="columns-wrapper"><div>Part Number</div></div>
+                            <div class="columns-wrapper"><div>Cage</div></div>
+                            <div class="columns-wrapper"><div>Description</div></div>
+                            <div class="columns-wrapper"><div>Qty</div></div>
+                            <div class="columns-wrapper"><div>NSN</div></div>
+                            <div class="columns-wrapper last"><div>SMR</div></div>
+                        </div>
+                    </div>
+                        <div id="table-body" class="right-align-block _1">
+                            <div class="content">
+                                <div id="listing" class="table-block">
+                                    <!--<span href="" class="block item w-inline-block"><div id="w-node-toplevel">Main Configuration</div></span>-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div id="about-wrapper" class="about-wrapper">
+            <a id="about-close-btn" class="cross-icon-wrapper w-inline-block">
+                <img src="close.png" alt="" />
+            </a>
+            <div class="container--new">
+                <div class="content--wrappepr">
+                    <div class="banner">
+                        <h3>Multilvl Part Viewer</h3>
+                        <h1>M18</h1>
+                        <h1>Modular Handgun System</h1>
+                    </div>
+                    <div class="text-wrapper">
+                        <p>Version: 11.0.2</p>
+                        <p>Description of product and program office.
+                            <br /><br /><br /><br /><br /></p>
+                        <p><b>Disclaimer:</b></p>
+                        <p>This device is for demonstration purposes only. While enhancing technical understanding, it is not intended to supplement currently existing manuals.</p>
+                        <br /><br />
+                    </div>
+                    <!--<div class="matrix"></div>-->
+                    <div class="flair">
+                        <span class="blue-block"><span class="divider"></span></span>
+                        <span class="white-block"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="controls-wrapper" class="about-wrapper">
+            <a id="controls-close-btn" class="cross-icon-wrapper w-inline-block">
+                <img src="close.png" alt="" />
+            </a>
+            <div class="container--new">
+                <div class="content--wrappepr">
+                    <div class="banner">
+                        <h3>Multilvl Part Viewer</h3>
+                        <h1>Controls</h1>
+                        <h1>&nbsp;</h1>
+                    </div>
+                    <div class="text-wrapper">
+                        <div class="info">
+                            <div class="row section">Buttons</div>
+                            <div class="row">
+                                <div class="column"><b>Icon</b></div>
+                                <div class="column"><b>Name</b></div>
+                                <div class="column"><b>Behavior</b></div>
+                            </div>
+                            <div class="row">
+                                <div class="column">
+                                    <span href="" class="icon-link w-inline-block"><img src="restart_alt.svg" loading="lazy" alt="" /></span>
+                                </div>
+                                <div class="column">Reset Camera</div>
+                                <div class="column">Return to the default view.</div>
+                            </div>
+                            <div class="row">
+                                <div class="column">
+                                    <span href="" class="hilight icon-link w-inline-block">A</span>
+                                </div>
+                                <div class="column">Toggle Annotations</div>
+                                <div class="column">Show or hide annotations.</div>
+                            </div>
+                            <div class="row">
+                                <div class="column">
+                                    <span href="" class="hilight icon-link w-inline-block"><img src="vector.svg" loading="lazy" alt="" /></span>
+                                </div>
+                                <div class="column">Focused Mode</div>
+                                <div class="column">Display only the selected object.</div>
+                            </div>
+                            <div class="row">
+                                <div class="column">
+                                    <span href="" class="icon-link w-inline-block"><img src="group97.svg" loading="lazy" alt="" /></span>
+                                </div>
+                                <div class="column">Isolate Mode</div>
+                                <div class="column">Display the selected object; others become transparent.</div>
+                            </div>
+                            <div class="row">
+                                <div class="column">
+                                    <span href="" class="icon-link w-inline-block"><img src="group99.svg" loading="lazy" alt="" /></span>
+                                </div>
+                                <div class="column">Expand/Collapse</div>
+                                <div class="column">Switch between normal and exploded view.</div>
+                            </div>
+                            <div class="row">
+                                <div class="column">
+                                    <span href="" class="icon-link w-inline-block"><img src="group98.svg" loading="lazy" alt="" /></span>
+                                </div>
+                                <div class="column">Restore Model</div>
+                                <div class="column">Revert all settings to original state.</div>
+                            </div>
+                            <div class="row section">Controls</div>
+                            <div class="row">
+                                <div class="column"><b>Mouse</b></div>
+                                <div class="column"><b>Touch</b></div>
+                                <div class="column"><b>Behavior</b></div>
+                            </div>
+                            <div class="row">
+                                <div class="column">Left Click</div>
+                                <div class="column">Finger Drag</div>
+                                <div class="column">Camera orbit.</div>
+                            </div>
+                            <div class="row">
+                                <div class="column">Scroll Wheel</div>
+                                <div class="column">Pinch</div>
+                                <div class="column">Camera Zoom in and out.</div>
+                            </div>
+                            <div class="row">
+                                <div class="column">Right Click</div>
+                                <div class="column">Dual Swipe</div>
+                                <div class="column">Camera Pan up/down and left/right.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--<div class="matrix"></div>-->
+                    <div class="flair">
+                        <span class="blue-block"><span class="divider"></span></span>
+                        <span class="white-block"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="links-wrapper" class="about-wrapper">
+            <a id="links-close-btn" class="cross-icon-wrapper w-inline-block">
+                <img src="close.png" alt="" />
+            </a>
+            <div class="container--new">
+                <div class="content--wrappepr">
+                    <div class="banner">
+                        <h3>Multilvl Part Viewer</h3>
+                        <h1>External Resource Links</h1>
+                        <h1>&nbsp;</h1>
+                    </div>
+                    <div class="text-wrapper">
+                        <div class="info"></div>
+                    </div>
+                    <!--<div class="matrix"></div>-->
+                    <div class="flair">
+                        <span class="blue-block"><span class="divider"></span></span>
+                        <span class="white-block"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="cop-section" style="display:block !important;">
+        <div class="step-tabs">
+        </div>
+        <div id="close-cop"><img src="close.png" alt="" /></div>
+        <div class="text-area">
+            <div class="top">
+                <span>&nbsp;</span>
+                <span>&nbsp;</span>
+            </div>
+            <div class="bottom">
+                <span>&nbsp;</span>
+            </div>
+        </div>
+        
+        <div id="playbar">
+            <div class="play-wrapper">
+                <input type="range" min="0" max="100" value="0" step="5" />
+                <div class="video-left">
+                    <div id="skipminus-10">
+                        <i class="fa-solid fa-backward"></i>
+                    </div>
+                    <div id="play-pause">
+                        <i class="fa-solid fa-play"></i>
+                    </div>
+                    <div id="skip-10">
+                        <i class="fa-solid fa-forward"></i>
+                    </div>
+                </div>
+                <div class="video-right">
+                    <span id="current-time">00:00</span>&nbsp;/&nbsp;<span id="max-duration">00:00</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <object data="user_defined.html" type="text/html" width="0" height="0">
+</body>
+
+</html>

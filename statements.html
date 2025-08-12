@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!-- __V3D_PUZZLES__ - enable Puzzles button in the App Manager -->
+<!--
+/**
+ * Author:    Von Simmons
+ * Created:   9.3.2024
+ * Purpose:   Webcode for MLPV by Checkpoint 3
+ * (c) Copyright by Checkpoint 3 LLC.
+ **/
+-->
+<html lang="en">
+<head>
+  <title>Multilvl Part Viewer</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+  <!-- Search Engines -->
+  <meta name="description" content="Multilvl Part Viewer">
+  <!-- favicons -->
+  <link rel="icon" type="image/png" sizes="16x16" href="cp3favicon_32.png">
+
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="preloader.css">
+  <link rel="stylesheet" type="text/css" href="bar.css">
+  <link href="multilvl.css" rel="stylesheet" content-type="text/css" media="all" />
+  <link rel="stylesheet" href="fontstyles.css" content-type="text/css" media="all" />
+</head>
+
+
+
+<body class="body">
+    <div id="preloader" class="preloader">
+        <div class="elements">
+            <div class="leftside">
+                <div style="margin-left:33px;"><img src="cp3logo.png" style="width:200px;" loading="lazy" /></div>
+                <h1>
+                    <span class="blue-block"><span class="divider"></span></span>M18<br />
+                    <span class="spacer-block"></span>Modular Handgun System
+                </h1>
+                <h2><span class="white-block"></span>Multilevel Part Viewer</h2>
+            </div>
+            <div class="start-wrapper">
+                <div id="go-start" style="display:none;">Start</div>
+            </div>
+            <div class="rightside">
+                <!--<img src="images/cp3logo.png" loading="lazy" />--><span class="white-block"></span>
+            </div>
+        </div>
+        <div class="matrix"></div>
+        <div class="loader-wrapper" style="display:none;">
+            <img src="cp3logo.png" loading="lazy" />
+            <div class="bar">
+                <div class="clipper"><div id="progress-light" class="clipped-light clipped-light-1 clipped-light-2"></div></div>
+            </div>
+            <div class="background"></div>
+        </div>
+        <div class="bottom-line"></div>
+    </div>
+</body>
+
+</html>

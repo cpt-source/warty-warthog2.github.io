@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Multilvl Part Viewer</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+  <!-- Search Engines -->
+  <meta name="description" content="Multilvl Part Viewer">
+  <!-- favicons -->
+  <link rel="icon" type="image/png" sizes="16x16" href="cp3favicon_32.png">
+
+
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="preloader.css">
+  <link rel="stylesheet" type="text/css" href="bar.css">
+  <link href="multilvl.css" rel="stylesheet" content-type="text/css" media="all" />
+  <link rel="stylesheet" href="fontstyles.css" content-type="text/css" media="all" />
+
+  <style>
+    #preloader {
+        overflow-y:scroll;
+        overflow-x:hidden;
+    }
+    #landing {
+        display:block;
+        width:100%;
+        padding-left:90px;
+        margin-top:170px;
+    }
+    #landing .left {
+        display:block;
+        float:left;
+        width:50%;
+    }
+    #landing .left h2 {
+        font-size:24px;
+    }
+    #landing .right {
+        display:block;
+        float:right;
+        width:48%;
+        padding-bottom:200px;
+    }
+
+    #landing .right .container {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+    }
+
+    /* Then style the iframe to fit in the container div with full height and width */
+    #landing .right iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    #landing a {
+        color:#0083ef;
+    }
+    #preloader .lower {
+        position:fixed;
+    }
+    #preloader .bottom-line {
+        position:fixed;
+    }
+    @media screen and (max-width: 1250px) {
+        #landing .left, #landing .right {
+            display:block;
+            width:95%;
+        }
+    }
+    @media screen and (max-width: 667px) {
+        #landing {
+            padding-left:40px;
+            margin-top:50px;
+        }
+        #landing h1, #landing h2 {
+            margin-left:0;
+        }
+    }
+  </style>
+</head>
+
+<body class="body">
+    <div id="preloader" class="preloader">
+        <div class="elements">
+            <div class="leftside">
+                <div style="margin-left:-16px;"><img src="cp3logo.png" style="width:200px;" loading="lazy" /></div>
+                <h1>
+                    <span class="blue-block">
+                    <span class="spacer-block">
+                </h1>
+                <h2><span class="white-block"></h2>
+            </div>
+            <div class="rightside">
+                <span class="white-block"></span>
+            </div>
+            <div id="landing">
+                <div class="left">
+                    <h1>Multilevel Part Viewer [MLPV]</h1>
+                    <p>An interactive platform that transforms part diagrams and data into an immersive experience. Users can explore equipment in a 3D environment, inspecting individual parts in real-time. With high-fidelity 3D models and instant access to detailed technical information for each component,  simplifying the process of identifying and understanding parts. Unmatched convenience and flexibility is now fully accessible via PC, mobile, and tablet devices.</p>
+                    <h2>REQUEST A DEMO</h2>
+                    <p>To request a personalized live demo, email us at: <a href="mailto:info@checkpointthree.com" target="_blank">info@checkpointthree.com</a></p>
+                </div>
+                <div class="right">
+                    <div class="container">
+                        <iframe src="https://www.youtube.com/embed/gPtmG4Hy2Mo?si=tIcIxowJNiyCMSEv?autoplay=1&showinfo=1&modestbranding=0&wmode=transparent&controls=1&color=white&rel=0&enablejsapi=0&playsinline=1&&version=3&theme=dark&autohide=1&egm=0&showsearch=0&loop=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="matrix"></div>
+        <div class="loader-wrapper" style="display:none;">
+            <img src="cp3logo.png" loading="lazy" />
+            <div class="bar">
+                <div class="clipper"><div id="progress-light" class="clipped-light clipped-light-1 clipped-light-2"></div></div>
+            </div>
+            <div class="background"></div>
+        </div>
+        <div class="bottom-line"></div>
+    </div>
+</body>
+
+</html>

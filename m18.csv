@@ -1,0 +1,60 @@
+title,Main Configuration
+01,56514,4568,Front Sight,1,555-555-555,abcd
+02,45687,4532,Extractor,1,555-555-556,abcd
+03,18153,4875,Rear Sight,1,555-555-557,abcd
+04,32341,1235,Slide,1,555-555-558,abcd
+05,35234,7824,Extractor Spring Guide,1,555-555-559,abcd
+06,34546,9824,Extractor Spring,1,555-555-560,abcd
+07,43456,7175,Extractor Pin,1,555-555-561,abcd
+08,86575,8542,Barrel,1,555-555-562,abcd
+09,45621,9752,Striker Assembly Housing,1,555-555-563,abcd
+10,53455,7175,Safety Lever Housing,1,555-555-572,abcd
+11.0,98675,7638,Recoil Spring Assembly,1,555-555-564,abcd
+11.1,65444,7824,Recoil Spring,1,555-555-572,abcd
+12,34536,4568,Grip Module Assembly,1,555-555-565,abcd
+skip
+14,45224,7895,Magazine Catch,1,555-555-567,abcd
+15,12354,9875,Magazine Catch Spring,1,555-555-568,abcd
+16,85564,6456,Stop Magazine,1,555-555-569,abcd
+17,46534,3745,Slide Catch Lever Pin,1,555-555-570,abcd
+skip
+19.0,44352,4878, Slide Catch Lever Post,1,555-555-572,abcd
+19.1,12165,9532, Slide Catch Lever Spring,1,555-555-572,abcd
+20,23145,1345, Receiver Assembly,1,555-555-573,abcd
+21,12165,6487,Slide Catch Lever,1,555-555-574,abcd
+22.0,56433,1235,Trigger Bar Spring,1,555-555-574,abcd
+22.1,75453,8864,Trigger Bar Spring arm,1,555-555-574,abcd
+23,45224,7895,Trigger,1,555-555-574,abcd
+24,12354,9875,Trigger Stop Pin,1,555-555-574,abcd
+25,85564,6456,Sear Pivot Pin,1,555-555-574,abcd
+26,56456,7867,Safety Lever Pivot Pin,1,555-555-574,abcd
+27,64564,6734,Takedown Safety Lever,1,555-555-574,abcd
+28,87677,2345,Takedown Lever,1,555-555-574,abcd
+29,86767,7869,Takedown Lever O Ring,1,555-555-574,abcd
+30,86778,984,Takedown Safety Lever Spring,1,555-555-574,abcd
+skip
+32,23145,1233,Safety Lever Housing 2,1,555-555-574,abcd
+33,12165,2345,Sear,1,555-555-574,abcd
+34.0,56433,1424,Sear Spring,1,555-555-574,abcd
+34.1,56433,1424,Sear Spring[HIDE],1,555-555-574,abcd
+35,75453,7421,Safety Lever Housing 2,1,555-555-574,abcd
+skip
+37,23145,4345,Trigger Bar,1,555-555-574,abcd
+38,12165,6634,Safety Lever Housing Pin,1,555-555-574,abcd
+39,56433,3432,Lever O Ring,1,555-555-574,abcd
+40,75453,5688,Recoil Spring Ring,1,555-555-574,abcd
+41,45224,6774,Striker,1,555-555-574,abcd
+42,12354,6344,Striker Spring Cup,1,555-555-574,abcd
+43,85564,1345,Striker Spring Cup,1,555-555-574,abcd
+44,56456,6487,Striker Reset Spring,1,555-555-574,abcd
+45,64564,1235,Striker Safety,1,555-555-574,abcd
+46,87677,8864,Striker Safety Spring,1,555-555-574,abcd
+47,86767,7895,Striker Safety Spring arm,1,555-555-574,abcd
+48,86778,9875,Striker Spring,1,555-555-574,abcd
+49,75453,6456,Bullet,1,555-555-574,abcd
+50,45224,7867,Bullet Sleeve 9x19,1,555-555-574,abcd
+51.0,12354,6734,Floor Plate,1,555-555-574,abcd
+51.1,23145,8785,Floor Plate Top,1,555-555-574,abcd
+52,12165,6834,Magazine,1,555-555-574,abcd
+53,56433,3422,Magazine Plate,1,555-555-574,abcd
+54,75453,1345,Magazine Spring,1,555-555-574,abcd

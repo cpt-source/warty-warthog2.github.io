@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<!-- __V3D_PUZZLES__ - enable Puzzles button in the App Manager -->
+<!--
+/**
+ * Author:    Von Simmons
+ * Created:   9.3.2024
+ * Purpose:   Webcode for MLPV by Checkpoint 3
+ * (c) Copyright by Checkpoint 3 LLC.
+ **/
+-->
+<html lang="en">
+<head>
+  <title>Multilvl Part Viewer</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+  <!-- Search Engines -->
+  <meta name="description" content="Multilvl Part Viewer">
+  <!-- favicons -->
+  <link rel="icon" type="image/png" sizes="16x16" href="cp3favicon_32.png">
+
+  <link rel="stylesheet" type="text/css" href="preloader.css">
+  <link rel="stylesheet" type="text/css" href="bar.css">
+  <link href="multilvl.css" rel="stylesheet" content-type="text/css" media="all" />
+  <link rel="stylesheet" href="fontstyles.css" content-type="text/css" media="all" />
+  <link rel="stylesheet" type="text/css" href="main_menu.css">
+</head>
+
+<body class="body">
+    <div id="main_menu" class="text-wrapper">
+        <h1>Welcome to MLPV</h1>
+        <div class="sub-title">Choose your mode</div>
+        <div class="section">
+            <div class="title">
+                <h3>Parts List</h3>
+                <p>
+                    Browse and explore parts in an interactive environment.<br />
+                    View detailed specification and technical part information.<br /><br />
+                    <span>Interactive 3D Models</span>&nbsp;&nbsp;&nbsp;&nbsp;<span>Technical Information</span>
+                </p>
+            </div>
+            <div class="start-button small viewer_site">Start</div>
+        </div>
+        <div class="section">
+            <div class="title">
+                <h3>Training Mode</h3>
+                <p>
+                    Follow step-by-step interactive training modules for<br />
+                    equipment maintenance and repair procedures.
+                </p>
+            </div>
+            <form action="" class="search w-form">
+                <button type="submit" disabled style="display: none;" aria-hidden="true"></button>
+                <input id="search-box" class="search-input w-input" maxlength="256" name="query" placeholder="Search" type="search" required="" />
+                <div id="clear" class="search-button w-button clear-button hide" value="">
+                    <img src="clear_btn.jpg" loading="lazy" />
+                    This svg is causing some weird Verge3D error. Not exactly sure why. Let's replace with svg image.
+                    <svg viewBox="0 0 24 24" style="width: 16px; height: 16px;" role="presentation">
+                        <path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" style="fill: currentcolor;"></path>
+                    </svg>
+                </div>
+                <!--<div id="search" type="submit" class="search-button w-button" value="" disabled >Search</div>-->
+            </form>
+            <div class="tasks">
+                <div class="task-container">
+                    <span class="difficulty-badge medium">Intermediate</span>
+                    <div class="task-header">
+                        <h4 class="task-title">Task Title</h4>
+                        <div class="task-description">
+                            Quick description text of maintenance task<br>
+                            Line two of description
+                        </div>
+                    </div>
+                    <div class="task-meta">
+                        <div class="task-description">
+                            <div>Duration:</div>
+                            <div>Steps:</div>
+                        </div>
+                        <div class="time-info">
+                            <div>15 minutes</div>
+                            <div>50</div>
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="tools-section task-description">
+                        <p>Required Tools:</p>
+                        <div class="tools-container">
+                            <span class="tag">Lubricant</span>
+                            <span class="tag">Cloth</span>
+                            <span class="tag">Phillips Head</span>
+                        </div>
+                    </div>
+
+                    <button class="trainer_site start-button">Start Training</button>
+                </div>
+                <div class="task-container">
+                    <span class="difficulty-badge easy">Beginner</span>
+                    <div class="task-header">
+                        <h4 class="task-title">Task Title</h4>
+                        <div class="task-description">
+                            Quick description text of maintenance task<br>
+                            Line two of description
+                        </div>
+                    </div>
+                    <div class="task-meta">
+                        <div class="task-description">
+                            <div>Duration:</div>
+                            <div>Steps:</div>
+                        </div>
+                        <div class="time-info">
+                            <div>15 minutes</div>
+                            <div>50</div>
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="tools-section task-description">
+                        <p>Required Tools:</p>
+                        <div class="tools-container">
+                            <span class="tag">Lubricant</span>
+                            <span class="tag">Cloth</span>
+                            <span class="tag">Phillips Head</span>
+                        </div>
+                    </div>
+
+                    <button class="trainer_site start-button">Start Training</button>
+                </div>
+                <div class="task-container">
+                    <span class="difficulty-badge medium">Intermediate</span>
+                    <div class="task-header">
+                        <h4 class="task-title">Task Title</h4>
+                        <div class="task-description">
+                            Quick description text of maintenance task<br>
+                            Line two of description
+                        </div>
+                    </div>
+                    <div class="task-meta">
+                        <div class="task-description">
+                            <div>Duration:</div>
+                            <div>Steps:</div>
+                        </div>
+                        <div class="time-info">
+                            <div>15 minutes</div>
+                            <div>50</div>
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="tools-section task-description">
+                        <p>Required Tools:</p>
+                        <div class="tools-container">
+                            <span class="tag">Lubricant</span>
+                            <span class="tag">Cloth</span>
+                            <span class="tag">Phillips Head</span>
+                        </div>
+                    </div>
+
+                    <button class="trainer_site start-button">Start Training</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="matrix"></div>
+
+    <script type="text/javascript">
+        window.onload = function() {
+            var viewer_button = document.querySelector('.viewer_site.start-button');
+            viewer_button.addEventListener('click', function() {
+                window.open('https://www.checkpointthree.com/mlpv/m18','_blank');
+            });
+            var trainer_button = document.getElementsByClassName('trainer_site');
+            for (var i = 0; i < trainer_button.length; i++) {
+                trainer_button[i].addEventListener('click', function() {
+                    window.open('https://www.checkpointthree.com/mlpt/m18','_blank');
+                });
+            }
+        };
+    </script>
+</body>
+
+</html>
